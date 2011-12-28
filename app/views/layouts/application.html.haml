@@ -1,0 +1,26 @@
+!!! 5
+%html
+  %head
+    %title Site
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+%body
+  %header#mainheader
+    %h1 Leesa Evans
+    %h2 Costume Designer
+    %ul#sociallinks
+      %li= link_to "Twitter"
+      %li= link_to "Facebook"
+  #content
+    = yield
+  %footer#mainfooter
+    %ul.footerlinks
+      %li= link_to "Costume Design"
+      %li= link_to "Celebrity Styling"
+      %li= link_to "Private Styling"
+      %li= link_to "Philanthropy"
+      %li= link_to "Blog"
+      %li= link_to "About"
+      %li= link_to "Contact"
