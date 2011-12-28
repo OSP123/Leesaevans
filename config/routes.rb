@@ -7,6 +7,10 @@ Site::Application.routes.draw do
   match 'philanthropy' => "pages#philanthropy", :as => :philanthropy 
   match 'private_styling' => "pages#private_styling", :as => :private_styling 
 
+  match 'costume_design/movie_posters' => "pages#movie_posters", :as => :movie_posters
+  match 'costume_design/movies' => "pages#movies", :as => :movies
+  match 'costume_design/behind_the_scenes' => "pages#behind_the_scenes", :as => :behind_the_scenes
+
   root :to => 'pages#index'
   # The priority is based upon order of creation:
 

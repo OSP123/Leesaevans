@@ -22,4 +22,10 @@ class PagesController < ApplicationController
 
   def private_styling
   end
+
+  def movie_posters
+  end
+
+  def behind_the_scenes
+  end
 end

@@ -39,7 +39,11 @@ body {
 }
 
 .categorysection {
-  display: none;
+  @include pie-clearfix;
+
+  @extend .container;
+
+  padding-top: 20px;
 }
 
 #content {

@@ -8,22 +8,22 @@
 //= require jquery_ujs
 //= require_tree .
 
-$(document).ready(function() {
-  $(".category a").click(function (e) {
-    e.preventDefault();
+//$(document).ready(function() {
+  //$(".category a").click(function (e) {
+    //e.preventDefault();
 
-    var target = $(this).attr("href");
-    var targetselector = $(target);
+    //var target = $(this).attr("href");
+    //var targetselector = $(target);
 
-    $(".categories").fadeOut("fast");
-    $(targetselector).fadeIn("fast");
-  })
+    //$(".categories").fadeOut("fast");
+    //$(targetselector).fadeIn("fast");
+  //})
 
-  $("#returncategories").click(function (e) {
-    e.preventDefault();
+  //$("#returncategories").click(function (e) {
+    //e.preventDefault();
 
-    $(this).parent().fadeOut("fast");
-    $(".categories").fadeIn("fast");
-  })
+    //$(this).parent().fadeOut("fast");
+    //$(".categories").fadeIn("fast");
+  //})
   
 });
