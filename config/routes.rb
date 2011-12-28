@@ -1,4 +1,15 @@
 Site::Application.routes.draw do
+  match 'about' => "pages#about", :as => :about 
+  match 'blog' => "pages#blog", :as => :blog 
+  match 'celebrity_styling' => "pages#celebrity_styling", :as => :celebrity_styling 
+  match 'costume_design' => "pages#costume_design", :as => :costume_design 
+  match 'contact' => "pages#contact", :as => :contact
+  match 'philanthropy' => "pages#philanthropy", :as => :philanthropy 
+  match 'private_styling' => "pages#private_styling", :as => :private_styling 
+
+  root :to => 'pages#index'
+  # The priority is based upon order of creation:
+
   root :to => 'pages#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.

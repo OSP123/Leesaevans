@@ -11,16 +11,16 @@
     %h1 Leesa Evans
     %h2 Costume Designer
     %ul#sociallinks
-      %li= link_to "Twitter"
-      %li= link_to "Facebook"
+      %li= link_to "Twitter", '', :class => "twitter"
+      %li= link_to "Facebook", '', :class => "facebook"
   #content
     = yield
   %footer#mainfooter
     %ul.footerlinks
-      %li= link_to "Costume Design"
-      %li= link_to "Celebrity Styling"
-      %li= link_to "Private Styling"
-      %li= link_to "Philanthropy"
-      %li= link_to "Blog"
-      %li= link_to "About"
-      %li= link_to "Contact"
+      %li= link_to "Costume Design", costume_design_path
+      %li= link_to "Celebrity Styling", celebrity_styling_path
+      %li= link_to "Private Styling", private_styling_path
+      %li= link_to "Philanthropy", philanthropy_path
+      %li= link_to "Blog", blog_path
+      %li= link_to "About", about_path
+      %li= link_to "Contact", contact_path

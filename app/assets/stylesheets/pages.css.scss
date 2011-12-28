@@ -1,15 +1,65 @@
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: #fff;
   color: #000;
   font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
 }
 
+.category {
+  float: left;
+  margin-right: 30px;
+
+  h1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  img {
+    border: 1px solid #000;
+    width: 290px;
+  }
+}
+
+.categoryitem {
+  display: block;
+  float: left;
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+.categorysection {
+  display: none;
+}
+
 #content {
+  @include pie-clearfix;
 }
 
 .container {
   margin: 0px 40px;
   width: 980px;
+}
+
+.contentmain {
+  @include pie-clearfix;
+
+  @extend .container;
+
+  $common-margin: 50px;
+
+  margin-bottom: $common-margin;
+  margin-top: $common-margin;
 }
 
 #mainheader {
@@ -45,7 +95,11 @@ body {
   padding: 7px 40px 8px;
 
   .footerlinks {
+    @include pie-clearfix;
+
     @extend .container;
+
+    margin-left: 0px;
 
     a {
       color: #f3f3f3;
@@ -62,10 +116,46 @@ body {
   }
 }
 
+#movieposters {
+  .categoryitem {
+    margin-right: 20px;
+    &.last {
+      margin-right: 0px;
+    }
+  }
+
+  img {
+    border: 1px solid #000;
+    width: 228px;
+  }
+}
+
+#returncategories {
+  color: #000;
+  display: block;
+  margin-bottom: 10px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 #sociallinks {
   @include pie-clearfix;
 
   float: right;
+
+  a {
+    display: block;
+    height: 19px;
+    text-indent: -9999px;
+    width: 19px;
+    &.facebook {
+      @extend .icon-facebook;
+    }
+    &.twitter {
+      @extend .icon-twitter;
+    }
+  }
 
   li {
     float: left;

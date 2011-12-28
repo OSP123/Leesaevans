@@ -5,8 +5,16 @@
  *= require_self
 */
 
+// Libraries
+
 @import "compass";
 @import "compass/reset";
 
-@import "**/*";
+// Sprites
 
+@import "icon/*.png";
+@include all-icon-sprites;
+
+// Include everything else
+
+@import "**/*";
