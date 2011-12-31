@@ -120,7 +120,7 @@ body {
   }
 }
 
-#movieposters {
+#movieposters, #behindthescenes {
   .categoryitem {
     margin-right: 20px;
     &.last {
@@ -131,6 +131,18 @@ body {
   img {
     border: 1px solid #000;
     width: 228px;
+  }
+}
+
+#behindthescenes {
+  img {
+    width: 305px;
+  }
+}
+
+#movies {
+  .categoryitem {
+    clear: both;
   }
 }
 
