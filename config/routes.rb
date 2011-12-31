@@ -13,9 +13,6 @@ Site::Application.routes.draw do
 
   root :to => 'pages#index'
   # The priority is based upon order of creation:
-
-  root :to => 'pages#index'
-  # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
