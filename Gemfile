@@ -5,7 +5,7 @@ gem 'rails', '3.1.3'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 
 # Gems used only for assets and not required
@@ -19,9 +19,6 @@ group :assets do
   gem "compass", "~> 0.12.alpha.3"
 end
 
-group :production do
-  gem 'pg'
-end
 
 
 # To use ActiveModel has_secure_password
