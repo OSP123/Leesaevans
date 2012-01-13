@@ -1,29 +1,38 @@
+= link_to raw("&#171; Return to Costume Design Categories"), costume_design_path, :id => "returncategories"
 %section#movieposters.categorysection
-  = link_to raw("&#171; Return to Costume Design Categories"), costume_design_path, :id => "returncategories"
   %article.categoryitem
-    = image_tag 'movie_posters/iloveyouman.png'
+    = link_to image_path('movie_posters/iloveyouman.png'), :class => 'fancybox', :rel => "group" do
+      = image_tag 'movie_posters/iloveyouman.png', :class => 'img'
     %h1 I Love You Man
   %article.categoryitem
-    = image_tag 'movie_posters/bridesmaids.png'
+    = link_to image_path('movie_posters/bridesmaids.png'), :class => 'fancybox', :rel => "group" do
+      = image_tag 'movie_posters/bridesmaids.png', :class => 'img'
     %h1 Bridesmaids
   %article.categoryitem
-    = image_tag 'movie_posters/gethimtothegreek.png'
+    = link_to image_path('movie_posters/gethimtothegreek.png'), :class => 'fancybox', :rel => "group" do
+      = image_tag 'movie_posters/gethimtothegreek.png', :class => 'img'
     %h1 Get Him To The Greek
   %article.categoryitem.last
-    = image_tag 'movie_posters/forgettingsarahmarshall.png'
+    = link_to image_path('movie_posters/forgettingsarahmarshall.png'), :class => 'fancybox', :rel => "group" do
+      = image_tag 'movie_posters/forgettingsarahmarshall.png', :class => 'img'
     %h1 Forgetting Sarah Marshall
   %article.categoryitem
-    = image_tag 'movie_posters/josie.png'
+    = link_to image_path('movie_posters/josie.png'), :class => 'fancybox', :rel => "group" do
+      = image_tag 'movie_posters/josie.png', :class => 'img'
     %h1 Josie and the Pussy Cats
   %article.categoryitem
-    = image_tag 'movie_posters/fiveyearengagement.png'
+    = link_to image_path('movie_posters/fiveyearengagement.png'), :class => 'fancybox', :rel => "group" do
+      = image_tag 'movie_posters/fiveyearengagement.png', :class => 'img'
     %h1 Five Year Engagement
   %article.categoryitem
-    = image_tag 'movie_posters/scoobydoo.png'
+    = link_to image_path('movie_posters/scoobydoo.png'), :class => 'fancybox', :rel => "group" do
+      = image_tag 'movie_posters/scoobydoo.png', :class => 'img'
     %h1 Scooby Doo
   %article.categoryitem.last
-    = image_tag 'movie_posters/scoobydootwo.png'
+    = link_to image_path('movie_posters/scoobydootwo.png'), :class => 'fancybox', :rel => "group" do
+      = image_tag 'movie_posters/scoobydootwo.png', :class => 'img'
     %h1 Scooby Doo Two
   %article.categoryitem
-    = image_tag 'movie_posters/intotheblue.png'
+    = link_to image_path('movie_posters/intotheblue.png'), :class => 'fancybox', :rel => "group" do
+      = image_tag 'movie_posters/intotheblue.png', :class => 'img'
     %h1 Into The Blue

@@ -6,7 +6,27 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require pixastic.custom
+//= require fancybox/jquery.fancybox.pack
+//= require fancybox/helpers/jquery.fancybox-buttons
+//= require fancybox/helpers/jquery.fancybox-thumbs
 //= require_tree .
+
+$(document).ready(function () {
+  $(".fancybox").fancybox();
+
+  $(".categoryitem .img").pixastic("desaturate");
+
+  $(".categoryitem").on("mouseenter", function () {
+      var img = $(this).find(".img")[0];
+      console.info(img);
+      Pixastic.revert(img);
+    });
+
+  $(".categoryitem").on("mouseleave", function () {
+    $(this).find(".img").pixastic("desaturate");
+  })
+})
 
 //$(document).ready(function() {
   //$(".category a").click(function (e) {
