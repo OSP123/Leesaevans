@@ -1,14 +1,14 @@
 %article.contentmain
   .categories
     %section.category
-      = link_to movies_path, :class => 'fancybox', do
+      = link_to movies_path do
         = image_tag 'costume_design/movies.png', :class => 'img'
       %h1 Movies
     %section.category
-      = link_to movie_posters_path, :class => 'fancybox', do
+      = link_to movie_posters_path do
         = image_tag 'costume_design/movie_poster.png', :class => 'img'
       %h1 Movie Posters
     %section.category
-      = link_to behind_the_scenes_path, :class => 'fancybox', do
+      = link_to behind_the_scenes_path do
         = image_tag 'costume_design/behind_the_scenes.png', :class => 'img'
       %h1 Behind the Scenes
