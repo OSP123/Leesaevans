@@ -55,6 +55,35 @@ body {
   @include pie-clearfix;
 }
 
+.contactinfo {
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 980px;
+
+  .contacthead {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    line-height: 20px;
+    strong {font-weight: 500;}
+  }
+
+  section {
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+    > h1 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+}
+
 .container {
   margin: 0px 40px;
   width: 980px;
