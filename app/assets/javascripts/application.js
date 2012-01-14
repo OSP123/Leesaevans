@@ -15,15 +15,15 @@
 $(document).ready(function () {
   $(".fancybox").fancybox();
 
-  $(".categoryitem .img").pixastic("desaturate");
+  $(".categoryitem .img, .category .img").pixastic("desaturate");
 
-  $(".categoryitem").on("mouseenter", function () {
+  $(".categoryitem, .category").on("mouseenter", function () {
       var img = $(this).find(".img")[0];
       console.info(img);
       Pixastic.revert(img);
     });
 
-  $(".categoryitem").on("mouseleave", function () {
+  $(".categoryitem, .category").on("mouseleave", function () {
     $(this).find(".img").pixastic("desaturate");
   })
 })
