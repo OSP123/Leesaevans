@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
   def about
-    render :text => "yo"
   end
 
   def blog
