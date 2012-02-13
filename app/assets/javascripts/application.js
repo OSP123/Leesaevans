@@ -7,6 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require pixastic.custom
+//= require jquery.jcarousel
 //= require fancybox/jquery.fancybox.pack
 //= require fancybox/helpers/jquery.fancybox-buttons
 //= require fancybox/helpers/jquery.fancybox-thumbs
@@ -14,6 +15,13 @@
 
 $(document).ready(function () {
   $(".fancybox").fancybox();
+
+  $("#homecarousel").jcarousel({
+    auto: 10,
+    size: 3,
+    scroll: 1,
+    wrap: 'circular'
+  });
 
   $(".categoryitem .img, .category .img").pixastic("desaturate");
 
