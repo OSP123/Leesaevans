@@ -5,11 +5,19 @@ Site::Application.routes.draw do
   match 'costume_design' => "pages#costume_design", :as => :costume_design 
   match 'contact' => "pages#contact", :as => :contact
   match 'philanthropy' => "pages#philanthropy", :as => :philanthropy 
+  match 'press' => "pages#press", :as => :press 
   match 'private_styling' => "pages#private_styling", :as => :private_styling 
+
+
+  match 'celebrity_styling/editorials' => "pages#editorials", :as => :editorials
+  match 'celebrity_styling/advertising' => "pages#advertising", :as => :advertising
+  match 'celebrity_styling/commercials' => "pages#commercials", :as => :commercials
 
   match 'costume_design/movie_posters' => "pages#movie_posters", :as => :movie_posters
   match 'costume_design/movies' => "pages#movies", :as => :movies
   match 'costume_design/behind_the_scenes' => "pages#behind_the_scenes", :as => :behind_the_scenes
+
+  match 'behind_the_scenes/five_year_engagement' => "pages#five_year_engagement", :as => :five_year_engagement
 
   root :to => 'pages#index'
   # The priority is based upon order of creation:

@@ -14,6 +14,9 @@ class PagesController < ApplicationController
   def costume_design
   end
 
+  def five_year_engagement
+  end
+
   def index
   end
 
@@ -27,5 +30,8 @@ class PagesController < ApplicationController
   end
 
   def behind_the_scenes
+  end
+
+  def press
   end
 end

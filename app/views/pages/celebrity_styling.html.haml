@@ -1,4 +1,14 @@
-%section.container.categorysection
-  coming soon...
-  %br
-  %br
+%article.contentmain
+  .categories
+    %section.category
+      = link_to editorials_path do
+        = image_tag 'editorials/editorial4.jpg', :class => 'img'
+      %h1 Editorials
+    %section.category
+      = link_to advertising_path do
+        = image_tag 'advertising/advertising1.jpg', :class => 'img'
+      %h1 Advertising
+    %section.category
+      = link_to commercials_path do
+        = image_tag 'advertising/advertising7.jpg', :class => 'img'
+      %h1 Commercials
