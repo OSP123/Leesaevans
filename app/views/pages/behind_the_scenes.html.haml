@@ -1,10 +1,10 @@
 = link_to raw("&#171; Return to Costume Design Categories"), costume_design_path, :id => "returncategories"
 %section#behindthescenes.categorysection
   .row
-    -#%article.categoryitem
-      -#= link_to image_path('behind_the_scenes/IMG_0863.jpeg'), :class => 'fancybox', :rel => "group" do
-        -#= image_tag 'behind_the_scenes/IMG_0863.jpeg', :class => 'img'
-      -#%h1 Title Missing
+    %article.categoryitem
+      = link_to get_him_to_the_greek_path do
+        = image_tag 'behind_the_scenes/gethimtothegreek1.jpeg', :class => 'img'
+      %h1 Get Him To The Greek
     %article.categoryitem
       = link_to this_is_fourty_path do
         = image_tag 'behind_the_scenes/thisis403.jpeg', :class => 'img'
@@ -12,4 +12,9 @@
     %article.categoryitem.last
       = link_to five_year_engagement_path do
         = image_tag 'behind_the_scenes/IMG_0862.jpeg', :class => 'img'
-      %h1 The Five Year Engagement
+      %h1 The Five Yea Engagement
+  .row
+    %article.categoryitem
+      = link_to i_love_you_man_path do
+        = image_tag 'behind_the_scenes/iloveyouman3.jpeg', :class => 'img'
+      %h1 I Love You Man

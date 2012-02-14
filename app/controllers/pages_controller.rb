@@ -37,4 +37,10 @@ class PagesController < ApplicationController
 
   def this_is_fourty
   end
+
+  def get_him_to_the_greek
+  end
+
+  def i_love_you_man
+  end
 end

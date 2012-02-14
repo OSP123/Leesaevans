@@ -18,6 +18,8 @@ Site::Application.routes.draw do
 
   match 'behind_the_scenes/five_year_engagement' => "pages#five_year_engagement", :as => :five_year_engagement
   match 'behind_the_scenes/this_is_fourty' => "pages#this_is_fourty", :as => :this_is_fourty
+  match 'behind_the_scenes/get_him_to_the_greek' => "pages#get_him_to_the_greek", :as => :get_him_to_the_greek
+  match 'behind_the_scenes/i_love_you_man' => "pages#i_love_you_man", :as => :i_love_you_man
 
   root :to => 'pages#index'
   # The priority is based upon order of creation:
