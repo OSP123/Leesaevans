@@ -34,4 +34,7 @@ class PagesController < ApplicationController
 
   def press
   end
+
+  def this_is_fourty
+  end
 end

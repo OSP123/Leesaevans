@@ -8,7 +8,6 @@ Site::Application.routes.draw do
   match 'press' => "pages#press", :as => :press 
   match 'private_styling' => "pages#private_styling", :as => :private_styling 
 
-
   match 'celebrity_styling/editorials' => "pages#editorials", :as => :editorials
   match 'celebrity_styling/advertising' => "pages#advertising", :as => :advertising
   match 'celebrity_styling/commercials' => "pages#commercials", :as => :commercials
@@ -18,6 +17,7 @@ Site::Application.routes.draw do
   match 'costume_design/behind_the_scenes' => "pages#behind_the_scenes", :as => :behind_the_scenes
 
   match 'behind_the_scenes/five_year_engagement' => "pages#five_year_engagement", :as => :five_year_engagement
+  match 'behind_the_scenes/this_is_fourty' => "pages#this_is_fourty", :as => :this_is_fourty
 
   root :to => 'pages#index'
   # The priority is based upon order of creation:
