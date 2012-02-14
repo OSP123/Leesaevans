@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   APP_DOMAIN = 'www.leesaevans.com'
 
   def ensure_domain
-    if Rails.env.production?
+    if Rails.env.production? && request.env['HTTP_HOST'] != 'leesaevansstaging.herokuapp.com'
       if request.env['HTTP_HOST'] != APP_DOMAIN
         # HTTP 301 is a "permanent" redirect
         redirect_to "http://#{APP_DOMAIN}", :status => 301
