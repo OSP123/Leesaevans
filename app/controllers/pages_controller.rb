@@ -43,4 +43,7 @@ class PagesController < ApplicationController
 
   def i_love_you_man
   end
+
+  def bridesmaids
+  end
 end

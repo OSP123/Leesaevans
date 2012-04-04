@@ -1,4 +1,14 @@
-%section.container.categorysection
-  coming soon...
-  %br
-  %br
+%article.contentmain
+  .categories
+    %section.category
+      = link_to movies_path do
+        = image_tag 'private_styling/events.png', :class => 'img'
+      %h1 Events
+    %section.category
+      = link_to movie_posters_path do
+        = image_tag 'private_styling/closets.png', :class => 'img'
+      %h1 Closets
+    %section.category
+      = link_to behind_the_scenes_path do
+        = image_tag 'private_styling/lifestyle.png', :class => 'img'
+      %h1 Lifestyle

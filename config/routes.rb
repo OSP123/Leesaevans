@@ -20,6 +20,7 @@ Site::Application.routes.draw do
   match 'behind_the_scenes/this_is_fourty' => "pages#this_is_fourty", :as => :this_is_fourty
   match 'behind_the_scenes/get_him_to_the_greek' => "pages#get_him_to_the_greek", :as => :get_him_to_the_greek
   match 'behind_the_scenes/i_love_you_man' => "pages#i_love_you_man", :as => :i_love_you_man
+  match 'behind_the_scenes/bridesmaids' => "pages#bridesmaids", :as => :bridesmaids
 
   root :to => 'pages#index'
   # The priority is based upon order of creation:
