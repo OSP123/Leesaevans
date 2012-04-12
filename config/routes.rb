@@ -6,7 +6,11 @@ Site::Application.routes.draw do
   match 'contact' => "pages#contact", :as => :contact
   match 'philanthropy' => "pages#philanthropy", :as => :philanthropy 
   match 'press' => "pages#press", :as => :press 
+
   match 'private_styling' => "pages#private_styling", :as => :private_styling 
+  match 'private_styling/lifestyle' => "pages#lifestyle", :as => :lifestyle 
+  match 'private_styling/closets' => "pages#closets", :as => :closets 
+  match 'private_styling/events' => "pages#events", :as => :events 
 
   match 'celebrity_styling/editorials' => "pages#editorials", :as => :editorials
   match 'celebrity_styling/advertising' => "pages#advertising", :as => :advertising

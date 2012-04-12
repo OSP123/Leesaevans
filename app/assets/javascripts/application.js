@@ -16,12 +16,12 @@
 $(document).ready(function () {
   $(".fancybox").fancybox();
 
-  $("#homecarousel").jcarousel({
-    auto: 10,
-    size: 3,
-    scroll: 1,
-    wrap: 'circular'
-  });
+  //$("#homecarousel").jcarousel({
+    //auto: 10,
+    //size: 3,
+    //scroll: 1,
+    //wrap: 'circular'
+  //});
 
   $(".categoryitem .img, .category .img").pixastic("desaturate");
 

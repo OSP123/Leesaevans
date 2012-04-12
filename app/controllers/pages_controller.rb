@@ -2,10 +2,16 @@ class PagesController < ApplicationController
   def about
   end
 
+  def advertising
+  end
+
   def blog
   end
 
   def celebrity_stylng
+  end
+
+  def commercials
   end
 
   def contact

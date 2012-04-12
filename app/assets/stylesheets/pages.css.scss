@@ -9,6 +9,7 @@ a {
 
 .about {
   overflow: hidden;
+  text-align: center;
 
   h1 {
     font-size: 24px;
@@ -23,8 +24,8 @@ a {
 
   p {
     font-size: 13px;
+    margin: 0px auto 10px;
     line-height: 24px;
-    margin-bottom: 10px;
     width: 460px;
   }
 }
@@ -33,6 +34,37 @@ body {
   background-color: #fff;
   color: #000;
   font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+
+  &.celebrity_styling, &.editorials, &.advertising, &.commercials {
+    li.celebrity_styling {
+      .highlight {display: block;}
+    }
+  }
+  &.private_styling, &.events, &.closets, &.lifestyle {
+    li.private_styling {
+      .highlight {display: block;}
+    }
+  }
+  &.costume_design, &.movies, &.movie_posters, &.behind_the_scenes {
+    li.costume_design {
+      .highlight {display: block;}
+    }
+  }
+  &.blog {
+    li.blog {
+      .highlight {display: block;}
+    }
+  }
+  &.about {
+    li.about {
+      .highlight {display: block;}
+    }
+  }
+  &.contact {
+    li.costume_design {
+      .highlight {display: block;}
+    }
+  }
 }
 
 .category {
@@ -133,6 +165,12 @@ body {
   margin-top: $common-margin;
 }
 
+#homecarousel {
+  img {
+    height: 501px;
+  }
+}
+
 #mainheader {
   @include pie-clearfix;
 
@@ -184,8 +222,18 @@ body {
     li {
       float: left;
       margin-right: 55px;
+      position: relative;
     }
   }
+}
+
+.highlight {
+  background: image-url("currenttab.png") no-repeat;
+  display: none;
+  height: 14px;
+  position: absolute;
+  top: -14px;
+  width: 29px;
 }
 
 .personalemails {
