@@ -9,14 +9,30 @@
     and filmmakers.
     the film is due out mid april...can't wait!!
 
-  %h2 At the Poster Shoot
-  = image_tag "behind_the_scenes/IMG_0863.jpeg", :class => "aboutimg"
-  = image_tag "behind_the_scenes/IMG_0854.jpeg", :class => "aboutimg"
-  = image_tag "behind_the_scenes/IMG_0856.jpeg", :class => "aboutimg"
-  = image_tag "behind_the_scenes/IMG_0862.jpeg", :class => "aboutimg"
-
-  %h2 our favorite find: beard beenies!! 
-  = image_tag "behind_the_scenes/IMG_0728.jpeg", :class => "aboutimg"
-
-  %h2 silly sweaters we made for the film
-  = image_tag "behind_the_scenes/IMG_0175.jpeg", :class => "aboutimg"
+%section.categorysection
+  .row
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/IMG_0863.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/IMG_0863.jpeg', :class => 'img'
+      %h1 At the Poster Shoot
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/IMG_0854.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/IMG_0854.jpeg', :class => 'img'
+      %h1 At the Poster Shoot
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/IMG_0856.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/IMG_0856.jpeg', :class => 'img'
+      %h1 At the Poster Shoot
+  .row
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/IMG_0862.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/IMG_0862.jpeg', :class => 'img'
+      %h1 At the Poster Shoot
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/IMG_0728.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/IMG_0728.jpeg', :class => 'img'
+      %h1 our favorite find: beard beanies!!
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/IMG_0175.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/IMG_0175.jpeg', :class => 'img'
+      %h1 silly sweaters we made for the film

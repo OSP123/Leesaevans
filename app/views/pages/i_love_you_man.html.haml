@@ -8,15 +8,22 @@
     of fun!
     I wish we could do a sequel!!
 
-  %h2 Paul's groomsmen!
-  = image_tag "behind_the_scenes/iloveyouman1.jpeg", :class => "aboutimg"
-
-  %h2 so fun to shoot a real rush concert
-  = image_tag "behind_the_scenes/iloveyouman2.jpeg", :class => "aboutimg"
-
-  %h2 rashida's signature color.......yellow!
-  = image_tag "behind_the_scenes/iloveyouman3.jpeg", :class => "aboutimg"
-
-  %h2 a great group picture from the premiere
-  = image_tag "behind_the_scenes/iloveyouman4.jpeg", :class => "aboutimg"
-
+%section.categorysection
+  .row
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/iloveyouman1.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/iloveyouman1.jpeg', :class => 'img'
+      %h1 Paul's groomsmen!
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/iloveyouman2.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/iloveyouman2.jpeg', :class => 'img'
+      %h1 so fun to shoot a real rush concert
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/iloveyouman4.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/iloveyouman4.jpeg', :class => 'img'
+      %h1 a great group picture from the premiere
+  .row
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/iloveyouman3.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/iloveyouman3.jpeg', :class => 'img'
+      %h1 rashida's signature color.......yellow!

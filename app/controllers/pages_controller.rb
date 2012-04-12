@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   def advertising
   end
 
+  def bio
+  end
+
   def blog
   end
 
@@ -20,13 +23,25 @@ class PagesController < ApplicationController
   def costume_design
   end
 
+  def day_in_the_life_video
+  end
+
   def five_year_engagement
   end
 
   def index
   end
 
+  def leesa
+  end
+
+  def nominations_awards
+  end
+
   def philanthropy
+  end
+
+  def philosophy
   end
 
   def private_styling

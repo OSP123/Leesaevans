@@ -7,13 +7,18 @@
     London, LA, New York & Vegas!
     Russell, Jonah & Diddy were a delight and the
     super talented Rose Byrne was such fun to dress!
-    
 
-  %h2 my favorite greek poster shot by mark seliger
-  = image_tag "behind_the_scenes/gethimtothegreek1.jpeg", :class => "aboutimg"
-
-  %h2 jackie q's super tight video
-  = image_tag "behind_the_scenes/gethimtothegreek2.jpeg", :class => "aboutimg"
-
-  %h2 Russell's album.......
-  = image_tag "behind_the_scenes/gethimtothegreek3.jpeg", :class => "aboutimg"
+%section.categorysection
+  .row
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/gethimtothegreek1.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/gethimtothegreek1.jpeg', :class => 'img'
+      %h1 my favorite greek poster shot by mark seliger
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/gethimtothegreek2.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/gethimtothegreek2.jpeg', :class => 'img'
+      %h1 jackie q's super tight video
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/gethimtothegreek3.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/gethimtothegreek3.jpeg', :class => 'img'
+      %h1 Russell's album.......

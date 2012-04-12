@@ -7,18 +7,26 @@
     kristen & annie wrote a sweet & hilarious script
     all shot in LA what a treat!!
 
-
-  %h2 one of my favorite posters ever!
-  = image_tag "behind_the_scenes/bridesmaids1.jpg", :class => "aboutimg"
-
-  %h2 alternate poster ideas!
-  = image_tag "behind_the_scenes/bridesmaids2.jpg", :class => "aboutimg"
-
-  %h2 I love this shot
-  = image_tag "behind_the_scenes/bridesmaids3.jpg", :class => "aboutimg"
-
-  %h2 my favorite day of shooting
-  = image_tag "behind_the_scenes/bridesmaids4.jpg", :class => "aboutimg"
-
-  %h2 I love these outfits!
-  = image_tag "behind_the_scenes/bridesmaids5.jpg", :class => "aboutimg"
+%section.categorysection
+  .row
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/bridesmaids1.jpg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/bridesmaids1.jpg', :class => 'img'
+      %h1 one of my favorite posters ever!
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/bridesmaids2.jpg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/bridesmaids2.jpg', :class => 'img'
+      %h1 alternate poster ideas!
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/bridesmaids3.jpg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/bridesmaids3.jpg', :class => 'img'
+      %h1 I love this shot
+  .row
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/bridesmaids4.jpg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/bridesmaids4.jpg', :class => 'img'
+      %h1 my favorite day of shooting
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/bridesmaids5.jpg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/bridesmaids5.jpg', :class => 'img'
+      %h1 I love these outfits!

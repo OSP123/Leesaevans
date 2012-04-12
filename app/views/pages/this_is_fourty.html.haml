@@ -8,11 +8,17 @@
     of knocked up and equally if not more hilarious!
     The film is due out next Christmas!
 
-  %h2 The Family
-  = image_tag "behind_the_scenes/thisis401.jpeg", :class => "aboutimg"
-
-  %h2 in the pool with chris, megan & jason
-  = image_tag "behind_the_scenes/thisis402.jpeg", :class => "aboutimg"
-
-  %h2 jason & leslie work out
-  = image_tag "behind_the_scenes/thisis403.jpeg", :class => "aboutimg"
+%section#thisisfourty.categorysection
+  .row
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/thisis401.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/thisis401.jpeg', :class => 'img'
+      %h1 The Family
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/thisis402.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/thisis402.jpeg', :class => 'img'
+      %h1 in the pool with chris, megan & jason
+    %article.categoryitem
+      = link_to image_path('behind_the_scenes/thisis403.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'behind_the_scenes/thisis403.jpeg', :class => 'img'
+      %h1 jason & leslie work out

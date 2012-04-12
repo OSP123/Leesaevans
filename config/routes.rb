@@ -1,11 +1,19 @@
 Site::Application.routes.draw do
   match 'about' => "pages#about", :as => :about 
+  match 'about/leesa' => "pages#leesa", :as => :leesa 
+  match 'about/press' => "pages#press", :as => :press 
+  match 'about/philosophy' => "pages#philosophy", :as => :philosophy 
+
+  match 'leesa/bio' => "pages#bio", :as => :bio
+  match 'leesa/day_in_the_life_video' => "pages#day_in_the_life_video", :as => :day_in_the_life_video
+  match 'leesa/nominations_awards' => "pages#nominations_awards", :as => :nominations_awards
+
+
   match 'blog' => "pages#blog", :as => :blog 
   match 'celebrity_styling' => "pages#celebrity_styling", :as => :celebrity_styling 
   match 'costume_design' => "pages#costume_design", :as => :costume_design 
   match 'contact' => "pages#contact", :as => :contact
   match 'philanthropy' => "pages#philanthropy", :as => :philanthropy 
-  match 'press' => "pages#press", :as => :press 
 
   match 'private_styling' => "pages#private_styling", :as => :private_styling 
   match 'private_styling/lifestyle' => "pages#lifestyle", :as => :lifestyle 

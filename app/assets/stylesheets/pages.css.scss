@@ -55,8 +55,9 @@ body {
       .highlight {display: block;}
     }
   }
-  &.about {
+  &.about, &.nominations_awards, .leesa, .press, .bio, .philosophy, .day_in_the_life_video {
     li.about {
+      overflow: visible;
       .highlight {display: block;}
     }
   }
