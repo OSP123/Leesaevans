@@ -1,3 +1,15 @@
 .contentmain.about 
-  = image_tag "about/cdgpresspic.jpeg", :width => 340
-  = image_tag "about/save.jpg"
+%article.contentmain
+  .categories
+    %section.category
+      = link_to philosophy_path do
+        = image_tag 'about/leesathumb.png', :class => 'img'
+      %h1 Philosophy
+    %section.category
+      = link_to philanthropy_path do
+        = image_tag 'about/leesathumb.png', :class => 'img'
+      %h1 Philanthropy
+    %section.category
+      = link_to colleagues_path do
+        = image_tag 'about/leesathumb.png', :class => 'img'
+      %h1 Colleagues
