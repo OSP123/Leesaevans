@@ -5,9 +5,9 @@ Site::Application.routes.draw do
   match 'about/philosophy' => "pages#philosophy", :as => :philosophy 
 
 =begin
-match 'about/philosophy/philosophy_subsection' => "pages#philosophy_subsection", :as :philosophy_subsection
-  match 'about/philosophy/philanthropy_subsection' => "pages#philanthropy_subsection", :as :philanthropy_subsection
- match 'about/philosophy/colleagues_subsection' => "pages#colleagues_subsection", :as :colleagues_subsection
+	match 'about/philosophy_subsection' => "pages#philosophy_subsection", :as :philosophy_subsection
+  match 'about/philanthropy_subsection' => "pages#philanthropy_subsection", :as :philanthropy_subsection
+	match 'about/colleagues_subsection' => "pages#colleagues_subsection", :as :colleagues_subsection
 =end
 
   match 'leesa/bio' => "pages#bio", :as => :bio
