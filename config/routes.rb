@@ -4,11 +4,10 @@ Site::Application.routes.draw do
   match 'about/press' => "pages#press", :as => :press 
   match 'about/philosophy' => "pages#philosophy", :as => :philosophy 
 
-=begin
-	match 'about/philosophy_subsection' => "pages#philosophy_subsection", :as :philosophy_subsection
-  match 'about/philanthropy_subsection' => "pages#philanthropy_subsection", :as :philanthropy_subsection
-	match 'about/colleagues_subsection' => "pages#colleagues_subsection", :as :colleagues_subsection
-=end
+	match 'about/philosophy/philosophy_subsection' => "pages#philosophy_subsection", :as => :philosophy_subsection
+  match 'about/philosophy/philanthropy_subsection' => "pages#philanthropy_subsection", :as => :philanthropy_subsection
+	match 'about/philosophy/colleagues_subsection' => "pages#colleagues_subsection", :as => :colleagues_subsection
+
 
   match 'leesa/bio' => "pages#bio", :as => :bio
   match 'leesa/day_in_the_life_video' => "pages#day_in_the_life_video", :as => :day_in_the_life_video
