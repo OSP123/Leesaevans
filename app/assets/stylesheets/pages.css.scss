@@ -81,6 +81,11 @@ body {
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
+    &.placeholder {
+      margin: 0;
+      position: relative;
+      bottom: 255px;
+    }
   }
 
   img {
@@ -150,8 +155,8 @@ body {
       font-size: 18px;
       font-weight: bold;
       margin-bottom: 10px;
+      }
     }
-  }
 }
 
 .container {
@@ -298,29 +303,3 @@ body {
     margin-right: 10px;
   }
 }
-
-/*
-
-width: 990px;
-height: 480px;
-background-color: peachPuff;
-
-
-width: 264px;
-height: 480px;
-background-color: grey;
-float: left;
-
-width: 264px;
-height: 480px;
-background-color: black;
-float: left;
-margin-left: 85px;
-
-
-width: 264px;
-height: 480px;
-background-color: darkRed;
-float: left;
-margin-left: 103px;
-*/
