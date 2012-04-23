@@ -8,17 +8,19 @@ Site::Application.routes.draw do
   match 'about/philosophy/philanthropy_subsection' => "pages#philanthropy_subsection", :as => :philanthropy_subsection
 	match 'about/philosophy/colleagues_subsection' => "pages#colleagues_subsection", :as => :colleagues_subsection
 
-
   match 'leesa/bio' => "pages#bio", :as => :bio
   match 'leesa/day_in_the_life_video' => "pages#day_in_the_life_video", :as => :day_in_the_life_video
 	match 'leesa/nominations_awards' => "pages#nominations_awards", :as => :nominations_awards
-
 
   match 'blog' => "pages#blog", :as => :blog 
   match 'celebrity_styling' => "pages#celebrity_styling", :as => :celebrity_styling 
   match 'costume_design' => "pages#costume_design", :as => :costume_design 
   match 'contact' => "pages#contact", :as => :contact
   match 'philanthropy' => "pages#philanthropy", :as => :philanthropy 
+
+  match 'contact/celebrity_styling_contact_info' => "pages#celebrity_styling_contact_info", :as => :celebrity_styling_contact_info
+  match 'contact/private_styling_contact_info' => "pages#private_styling_contact_info", :as => :private_styling_contact_info
+  match 'contact/movies_contact_info' => "pages#movies_contact_info", :as => :movies_contact_info
 
   match 'private_styling' => "pages#private_styling", :as => :private_styling 
   match 'private_styling/lifestyle' => "pages#lifestyle", :as => :lifestyle 

@@ -1,11 +1,18 @@
-%section.contactinfo
-  %h1.contacthead Contact Information
-
-  %ul.personalemails
-    %li= mail_to 'leesa@leesaevans.com'
-    %li= mail_to 'brooke@leesaevans.com'
-    %li= mail_to 'inqueries@leesaevans.com'
-    %li= mail_to 'accounts@leesaevans.com'
+%article.contentmain
+  .categories
+    %section.category
+      = link_to celebrity_styling_contact_info_path do
+        = image_tag 'about/pic_frame.jpg', :class => 'img'
+      %h1.placeholder Celebrity Styling
+    %section.category
+      = link_to private_styling_contact_info_path do
+        = image_tag 'about/pic_frame.jpg', :class => 'img'
+      %h1.placeholder Private Styling
+    %section.category
+      = link_to movies_contact_info_path do
+        = image_tag 'about/pic_frame.jpg', :class => 'img'
+      %h1.placeholder Movies
+-#
   
 
   %section.celebritystyling

@@ -42,6 +42,26 @@ body {
   &.celebrity_styling, &.editorials, &.advertising, &.commercials {
     li.celebrity_styling {
       .highlight {display: block;}
+
+  &.costume_design, &.movies, &.movie_posters, &.behind_the_scenes {
+    li.costume_design {
+      .highlight {display: block;}
+    }
+  }
+  &.blog {
+    li.blog {
+      .highlight {display: block;}
+    }
+  }
+  &.about, &.nominations_awards, .leesa, .press, .bio, .philosophy, .day_in_the_life_video {
+    li.about {
+      overflow: visible;
+      .highlight {display: block;}
+    }
+  }
+  &.contact {
+
+      }
     }
   }
   &.private_styling, &.events, &.closets, &.lifestyle {
@@ -72,6 +92,21 @@ body {
   }
 }
 
+.contact_info_section 
+{
+  margin-bottom: 151px;
+}
+
+h1.contact_info_header {
+  font-size: 39px;
+  padding-bottom: 53px;
+}
+
+.contact_info_body {
+  font-size: 24px;
+}
+
+
 .category {
   float: left;
   margin-right: 30px;
@@ -91,6 +126,29 @@ body {
   img {
     border: 1px solid #000;
     width: 290px;
+  }
+}
+
+.categoryitem {
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 316px;
+
+  img {
+    width: 100%;
+  }
+
+  canvas, img {
+    border: 1px solid #ccc;
+  }
+
+  h1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
   }
 }
 
