@@ -1,4 +1,8 @@
 = link_to raw("&#171; Return to Celebrity Styling"), celebrity_styling_path, :id => "returncategories"
-.contentmain.about
-  %h1.coming_soon Coming Soon
-
+.blog_section
+  = link_to press_path do
+    = image_tag 'press.jpg', :class => 'img'
+  %article.blog_content
+    .blog_body
+      %h1.blog_title Coming Soon...
+      %a{:href => "#", :onclick => "history.back();return false"} Back

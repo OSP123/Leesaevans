@@ -118,27 +118,62 @@ p.coming_soon_private_styling {
 }
 
 .blog_title {
-  position: relative;
+  position: absolute;
   text-align: center;
-  bottom: 466px;
   font-size: 69px;
-  right: 163px;
+  top: -13px;
+  float: left;
+  left: -380px;
+}
+
+.blog_content {
+
+  a {
+    position: relative;
+    top: 54px;
+    left: 28px;
+    color: black;
+
+  }
+  color: black;
+  font-size: 30px;
+  position: relative;
+  bottom: 441px;
+  left: 726px;
 }
 
 .blog_section {
+}
+
+.coming_soon_title {
+  float: left;
+  text-align: center;
+  font-size: 69px;
+}
+
+.coming_soon_section {
+
+  margin-bottom: 397px;
+
   img {
     position: relative;
-    bottom: 47px;
+    height: 510px;
   }
 }
 
-.blog_content{
+.coming_soon_content{
   a {
-    position:relative;
-    bottom: 430px;
-    left: 532px;
     color: black;
+    font-size: 30px;
+    float: right;
+    margin-right: 22px;
   }
+
+.coming_soon_body {
+  margin: 0 auto;
+  width: 499px;
+  height: 102px;
+}
 
 }
 .category {

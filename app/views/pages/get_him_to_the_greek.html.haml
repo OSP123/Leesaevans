@@ -1,9 +1,8 @@
 = link_to raw("&#171; Return to Behind The Scenes"), behind_the_scenes_path, :id => "returncategories"
-.contentmain.about 
-
-  %p.coming_soon Coming Soon
-
-%section.categorysection
-  .row
-    %article.categoryitem
-     
+.blog_section
+  = link_to press_path do
+    = image_tag 'press.jpg', :class => 'img'
+  %article.blog_content
+    .blog_body
+      %h1.blog_title Coming Soon...
+      %a{:href => "#", :onclick => "history.back();return false"} Back
