@@ -273,6 +273,15 @@ p.coming_soon_private_styling {
   @extend .container;
 }
 
+.contentmain {
+  h1.press_header {
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 43px;
+  }
+
+}
+
 #content {
   @include pie-clearfix;
 }
@@ -426,6 +435,12 @@ p.coming_soon_private_styling {
 
   .categoryitem {
     &:last-child {margin-right: 0px;}
+
+    h1.placeholder {
+      margin: 0 35px;
+      position: relative;
+      bottom: 256px;
+    }
   }
 }
 
