@@ -179,15 +179,25 @@ p.coming_soon_private_styling {
     font-size: 30px;
     float: right;
     margin-right: 22px;
-  }
-
+    }
+}
 .coming_soon_body {
   margin: 0 auto;
   width: 499px;
   height: 102px;
 }
 
+.philanthropy_section {
+  text-align: center;
+  margin: 94px 1px 360px 1px;
+  font-size: 26px;
+
+  a {
+  clear: both;
+  display:block;
+  }
 }
+
 .category {
   float: left;
   margin-right: 30px;
