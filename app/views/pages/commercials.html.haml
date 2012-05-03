@@ -1,8 +1,39 @@
 = link_to raw("&#171; Return to Celebrity Styling"), celebrity_styling_path, :id => "returncategories"
-.blog_section
-  = link_to press_path do
-    = image_tag 'press.jpg', :class => 'img'
-  %article.blog_content
-    .blog_body
-      %h1.blog_title Coming Soon...
-      %a{:href => "#", :onclick => "history.back();return false"} Back
+%section#commercials.categorysection
+  .row
+    %article.categoryitem
+      = link_to '<div><iframe width="560" height="315" src="http://www.youtube.com/v/-SJshO4Ys4M?" frameborder="0" allowfullscreen></iframe></div>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'Russell-Brand-hp-touchpad.jpg', :class => 'img'
+    %article.categoryitem
+      = link_to '<iframe width="560" height="315" src="http://www.youtube.com/v/Ls4KvfEcAic?" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'Russell-Brand-HP.jpg', :class => 'img'
+    %article.categoryitem
+      = link_to '<iframe width="560" height="315" src="http://www.youtube.com/v/ZZ1_CQD1jS8?" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'movie_posters/iloveyouman.png', :class => 'img'
+  .row
+    %article.categoryitem
+      = link_to '<iframe width="560" height="315" src="http://www.youtube.com/v/SvmALPg9Cmk?" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'movie_posters/gethimtothegreek.png', :class => 'img'
+    %article.categoryitem
+      = link_to '<iframe width="560" height="315" src="http://www.themagnetagency.com/?m=Wardrobe&amp;id=9&amp;sm=COMMERCIALS" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'movie_posters/forgettingsarahmarshall.png', :class => 'img'
+    %article.categoryitem
+      = link_to '<iframe width="560" height="315" src="http://www.themagnetagency.com/?m=Wardrobe&amp;id=9&amp;sm=COMMERCIALS" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'movie_posters/intotheblue.png', :class => 'img'
+  .row
+    %article.categoryitem
+      = link_to '<iframe width="560" height="315" src="http://youtu.be/u0FfCJ9M0hE" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'movie_posters/americanpie.png', :class => 'img'
+    %article.categoryitem
+      = link_to '<iframe width="560" height="315" src="http://youtu.be/66RgU4QUJ7M" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'movie_posters/josie.png', :class => 'img'
+    %article.categoryitem
+      = link_to '<iframe width="560" height="315" src="http://www.mtv.com/videos/misc/431101/vma-2009-britney-spears-and-russell-brand.jhtml#id=1619535" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'movie_posters/scoobydootwo.png', :class => 'img'
+  .row
+    %article.categoryitem
+      = link_to '<iframe width="560" height="315" src="http://www.mtv.com/videos/misc/429464/vma-side-story-russell-brand.jhtml#id=1618731" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'movie_posters/scoobydoo.png', :class => 'img'
+    %article.categoryitem
+      = link_to '<iframe width="560" height="315" src="http://www.youtube.com/watch?v=0SyhAFyqvBk" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'movie_posters/thethirdwheel.png', :class => 'img'
