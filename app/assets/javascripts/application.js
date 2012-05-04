@@ -23,17 +23,17 @@ $(document).ready(function () {
     //wrap: 'circular'
   //});
 
-  $(".categoryitem .img, .category .img").pixastic("desaturate");
+ // $(".categoryitem .img, .category .img").pixastic("desaturate");
 
-  $(".categoryitem, .category").on("mouseenter", function () {
-      var img = $(this).find(".img")[0];
-      console.info(img);
-      Pixastic.revert(img);
-    });
+ // $(".categoryitem, .category").on("mouseenter", function () {
+  //    var img = $(this).find(".img")[0];
+  //    console.info(img);
+  //    Pixastic.revert(img);
+  //  });
 
-  $(".categoryitem, .category").on("mouseleave", function () {
-    $(this).find(".img").pixastic("desaturate");
-  })
+//  $(".categoryitem, .category").on("mouseleave", function () {
+//    $(this).find(".img").pixastic("desaturate");
+//  })
 })
 
 //$(document).ready(function() {
