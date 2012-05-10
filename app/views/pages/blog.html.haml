@@ -1,7 +1,4 @@
 .blog_section
-  = link_to press_path do
-    = image_tag 'press.jpg', :class => 'img'
-  %article.blog_content
-    .blog_body
-      %h1.blog_title Coming Soon...
-      %a{:href => "#", :onclick => "history.back();return false"} Back
+  .blog_body
+    %iframe{:frameborder => "0", :height => "900", :src => "http://leesaevans.tumblr.com/", :width => "900"}
+
