@@ -1,8 +1,22 @@
 = link_to raw("&#171; Return to Behind The Scenes"), behind_the_scenes_path, :id => "returncategories"
-.blog_section
-  = link_to press_path do
-    = image_tag 'press.jpg', :class => 'img'
-  %article.blog_content
-    .blog_body
-      %h1.blog_title Coming Soon...
-      %a{:href => "#", :onclick => "history.back();return false"} Back
+%section#editorials.categorysection
+  .row
+    %article.categoryitem
+      = link_to image_path('five_year_engagement/engagement_ring_excitement.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'five_year_engagement/engagement_ring_excitement.jpeg', :class => 'img'
+    %article.categoryitem.last
+      = link_to image_path('five_year_engagement/family_pic_silly.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'five_year_engagement/family_pic_silly.jpeg', :class => 'img'
+    %article.categoryitem
+      = link_to image_path('five_year_engagement/family_pic_serious.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'five_year_engagement/family_pic_serious.jpeg', :class => 'img'
+  .row
+    %article.categoryitem
+      = link_to image_path('five_year_engagement/toasting.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'five_year_engagement/toasting.jpeg', :class => 'img'
+    %article.categoryitem.last
+      = link_to image_path('five_year_engagement/shirts.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'five_year_engagement/shirts.jpeg', :class => 'img'
+    %article.categoryitem.last
+      = link_to image_path('five_year_engagement/beard_beanies.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'five_year_engagement/beard_beanies.jpeg', :class => 'img'
