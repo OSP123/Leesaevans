@@ -1,8 +1,25 @@
 = link_to raw("&#171; Return to Behind The Scenes"), behind_the_scenes_path, :id => "returncategories"
-.blog_section
-  = link_to press_path do
-    = image_tag 'press.jpg', :class => 'img'
-  %article.blog_content
-    .blog_body
-      %h1.blog_title Coming Soon...
-      %a{:href => "#", :onclick => "history.back();return false"} Back
+%section#editorials.categorysection
+  %p I Love You Man:
+  %p 2 of my favorite guys: Paul Rudd & Jason Segel...
+  %p An amazing director, John Hamburg, and loads of fun!
+  %p I wish we could do a sequel!!
+  .row
+    %article.i_love_you_man_alignment
+
+      = link_to image_path('i_love_you_man/tuxedo_walking.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'i_love_you_man/premiere_group_picture.jpeg', :class => 'img'
+        %p Paul's groomsmen!
+    %article.i_love_you_man_alignment
+      = link_to image_path('i_love_you_man/rush_concert.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'i_love_you_man/rush_concert.jpeg', :class => 'img'
+        %p So fun to shoot a real Rush concert
+  .row
+    %article.i_love_you_man_alignment
+      = link_to image_path('i_love_you_man/rashida_pics.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'i_love_you_man/rashida_pics.jpeg', :class => 'img'
+        %p Rashida's signature color.......yellow!
+    %article.i_love_you_man_alignment
+      = link_to image_path('i_love_you_man/premiere_group_picture.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'i_love_you_man/premiere_group_picture.jpeg', :class => 'img'
+        %p A great group picture from the premiere
