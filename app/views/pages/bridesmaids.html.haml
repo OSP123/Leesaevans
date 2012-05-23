@@ -1,8 +1,27 @@
 = link_to raw("&#171; Return to Behind The Scenes"), behind_the_scenes_path, :id => "returncategories"
-.blog_section
-  = link_to press_path do
-    = image_tag 'press.jpg', :class => 'img'
-  %article.blog_content
-    .blog_body
-      %h1.blog_title Coming Soon...
-      %a{:href => "#", :onclick => "history.back();return false"} Back
+%section#editorials.categorysection
+  %p Bridesmaids
+  %p 6 amazing women.....what a great time!
+  %p Kristen & Annie wrote a sweet & hilarious script, all shot in LA; what a treat!!
+  .row
+    %article.categoryitem
+      = link_to image_path('brides_maids/against_the_wall.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'brides_maids/against_the_wall.jpeg', :class => 'img'
+        %p One of my favorite posters ever!
+    %article.categoryitem.last
+      = link_to image_path('brides_maids/close_up_with_bunnies.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'brides_maids/close_up_with_bunnies.jpeg', :class => 'img'
+        %p Alternate poster ideas!
+    %article.categoryitem
+      = link_to image_path('brides_maids/in_hallway.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'brides_maids/in_hallway.jpeg', :class => 'img'
+        %p I love this shot
+  .row
+    %article.categoryitem
+      = link_to image_path('brides_maids/pan_out_with_bunnies.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'brides_maids/pan_out_with_bunnies.jpeg', :class => 'img'
+        %p My favorite day of shooting
+    %article.categoryitem.last
+      = link_to image_path('brides_maids/parking_lot.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'brides_maids/parking_lot.jpeg', :class => 'img'
+        %p I love these outfits! 
