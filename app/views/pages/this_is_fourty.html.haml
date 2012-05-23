@@ -1,8 +1,19 @@
 = link_to raw("&#171; Return to Behind The Scenes"), behind_the_scenes_path, :id => "returncategories"
-.blog_section
-  = link_to press_path do
-    = image_tag 'press.jpg', :class => 'img'
-  %article.blog_content
-    .blog_body
-      %h1.blog_title Coming Soon...
-      %a{:href => "#", :onclick => "history.back();return false"} Back
+%section#editorials.categorysection
+  %p This is 40:
+  %p We had a  great summer with the adorable Paul Rudd and the entire Apatow family.
+  %p This is 40 is a spin off of knocked up and equally, if not more, hilarious!
+  %p The film is due out next Christmas!
+  .row
+    %article.categoryitem
+      = link_to image_path('this_is_40/cake_fun.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'this_is_40/cake_fun.jpeg', :class => 'img'
+        %p the family
+    %article.categoryitem.last
+      = link_to image_path('this_is_40/pool_fun.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'this_is_40/pool_fun.jpeg', :class => 'img'
+        %p in the pool with chris, megan & jason
+    %article.categoryitem
+      = link_to image_path('this_is_40/working_out.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'this_is_40/working_out.jpeg', :class => 'img'
+        %p jason & leslie work out
