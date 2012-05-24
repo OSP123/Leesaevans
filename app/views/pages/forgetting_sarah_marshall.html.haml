@@ -1,9 +1,19 @@
 = link_to raw("&#171; Return to Behind The Scenes"), behind_the_scenes_path, :id => "returncategories"
-.blog_section
-  = link_to press_path do
-    = image_tag 'press.jpg', :class => 'img'
-  %article.blog_content
-    .blog_body
-      %h1.blog_title Coming Soon...
-      %a{:href => "#", :onclick => "history.back();return false"} Back
-
+%section#editorials.categorysection
+  %p Get Him to the Greek:
+  %p What an amazing experience shooting in 4 cities......
+  %p London, LA, New York & Vegas!
+  %p Russell, Jonah & Diddy were a delight and the super talented Rose Byrne was such fun to dress!
+  .row
+    %article.categoryitem
+      = link_to image_path('get_him_to_the_greek/russell_swinging.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'get_him_to_the_greek/russell_swinging.jpeg', :class => 'img'
+        %p My favorite Greek poster, shot by Mark Seliger
+    %article.categoryitem.last
+      = link_to image_path('get_him_to_the_greek/jackies_video.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'get_him_to_the_greek/jackies_video.jpeg', :class => 'img'
+        %p Jackie Q's super tight video
+    %article.categoryitem
+      = link_to image_path('get_him_to_the_greek/russells_album.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'get_him_to_the_greek/russells_album.jpeg', :class => 'img'
+        %p Russell's album.......
