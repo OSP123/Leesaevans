@@ -142,7 +142,7 @@ p.coming_soon_private_styling {
 }
 
 .blog_body {
-  margin-left: 224px;
+  margin-left: 369px;
   }
 
 .blog_content {
@@ -191,16 +191,7 @@ p.coming_soon_private_styling {
   height: 102px;
 }
 
-.philanthropy_section {
-  text-align: center;
-  margin: 94px 1px 360px 1px;
-  font-size: 26px;
 
-  a {
-  clear: both;
-  display:block;
-  }
-}
 
 .category {
   float: left;
@@ -355,6 +346,15 @@ p.coming_soon_private_styling {
   margin-top: $common-margin;
 }
 
+.highlight {
+  background: image-url("currenttab.png") no-repeat;
+  display: none;
+  height: 14px;
+  position: absolute;
+  top: -14px;
+  width: 29px;
+}
+
 #homecarousel {
   img {
     height: 501px;
@@ -426,17 +426,20 @@ p.coming_soon_private_styling {
   }
 }
 
-.highlight {
-  background: image-url("currenttab.png") no-repeat;
-  display: none;
-  height: 14px;
-  position: absolute;
-  top: -14px;
-  width: 29px;
-}
 
 .personalemails {
   margin-bottom: 20px;
+}
+
+.philanthropy_section {
+  text-align: center;
+  margin: 94px 1px 360px 1px;
+  font-size: 26px;
+
+  a {
+  clear: both;
+  display:block;
+  }
 }
 
 .presslinks {
