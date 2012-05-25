@@ -8,20 +8,22 @@
       = link_to image_path('brides_maids/against_the_wall.jpeg'), :class => 'fancybox', :rel => "group" do
         = image_tag 'brides_maids/against_the_wall.jpeg', :class => 'img'
         %p One of my favorite posters ever!
-    %article.categoryitem.last
+    %article.categoryitem
       = link_to image_path('brides_maids/close_up_with_bunnies.jpeg'), :class => 'fancybox', :rel => "group" do
         = image_tag 'brides_maids/close_up_with_bunnies.jpeg', :class => 'img'
-        %p Alternate poster ideas!
-    %article.categoryitem
-      = link_to image_path('brides_maids/in_hallway.jpeg'), :class => 'fancybox', :rel => "group" do
-        = image_tag 'brides_maids/in_hallway.jpeg', :class => 'img'
-        %p I love this shot
-  .row
-    %article.categoryitem
+        %p Alternate poster ideas
+    %article.categoryitem.last
       = link_to image_path('brides_maids/pan_out_with_bunnies.jpeg'), :class => 'fancybox', :rel => "group" do
         = image_tag 'brides_maids/pan_out_with_bunnies.jpeg', :class => 'img'
         %p My favorite day of shooting
-    %article.categoryitem.last
+
+  -#you can use the same class from the row up here down here.
+  .bridesmaids_row
+    .bridesmaids_div
+      = link_to image_path('brides_maids/in_hallway.jpeg'), :class => 'fancybox', :rel => "group" do
+        = image_tag 'brides_maids/in_hallway.jpeg', :class => 'bridesmaids left'
+        %p I love this shot
+    .bridesmaids_div
       = link_to image_path('brides_maids/parking_lot.jpeg'), :class => 'fancybox', :rel => "group" do
-        = image_tag 'brides_maids/parking_lot.jpeg', :class => 'img'
-        %p I love these outfits! 
+        = image_tag 'brides_maids/parking_lot.jpeg', :class => 'bridesmaids'
+        %p I love these outfits!

@@ -161,6 +161,19 @@ p.coming_soon_private_styling {
   left: 726px;
 }
 
+.bridesmaids_div {
+  float: left;
+
+  .bridesmaids {
+    height: 331px;
+    width: 480px;
+
+    &.left {
+      margin-right: 10px;
+    }
+  }
+}
+
 .coming_soon_title {
   float: left;
   text-align: center;
@@ -439,6 +452,7 @@ p.coming_soon_private_styling {
   a {
   clear: both;
   display:block;
+  color: black;
   }
 }
 
