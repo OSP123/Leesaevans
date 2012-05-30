@@ -5,12 +5,15 @@
     %section.category
       = link_to philosophy_subsection_path do
         = image_tag 'about/pic_frame.jpg', :class => 'img'
-      %h1.placeholder Philosophy
+      %h1.placeholder
+        = link_to "Philosophy", philosophy_subsection_path
     %section.category
       = link_to philanthropy_subsection_path do
         = image_tag 'about/pic_frame.jpg', :class => 'img'
-      %h1.placeholder Philanthropy
+      %h1.placeholder
+        = link_to "Philanthropy", philanthropy_subsection_path
     %section.category
       = link_to colleagues_subsection_path do
         = image_tag 'about/pic_frame.jpg', :class => 'img'
-      %h1.placeholder Colleagues
+      %h1.placeholder
+        = link_to "Colleagues", colleagues_subsection_path
