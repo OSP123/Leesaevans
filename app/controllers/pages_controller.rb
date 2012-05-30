@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def blog
+    render :layout => "bloglayout"
   end
 
   def celebrity_stylng

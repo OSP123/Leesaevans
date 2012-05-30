@@ -12,7 +12,7 @@ Site::Application.routes.draw do
   match 'leesa/day_in_the_life_video' => "pages#day_in_the_life_video", :as => :day_in_the_life_video
 	match 'leesa/nominations_awards' => "pages#nominations_awards", :as => :nominations_awards
 
-  match 'blog' => "pages#blog", :as => :blog 
+  match 'blog' => "pages#blog", :as => :blog, :layout => 'bloglayout.html.haml'
   match 'celebrity_styling' => "pages#celebrity_styling", :as => :celebrity_styling 
   match 'costume_design' => "pages#costume_design", :as => :costume_design 
   match 'contact' => "pages#contact", :as => :contact
