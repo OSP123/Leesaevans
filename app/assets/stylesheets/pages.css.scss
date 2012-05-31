@@ -113,19 +113,19 @@ h1.coming_soon {
   padding-bottom: 382px;
 }
 
-p.coming_soon_private_styling {
+p.coming_soon_private_styling_closets {
   padding: 19px;
-  padding-bottom: 300px;
+  padding-bottom: 260px;
 }
 
 p.coming_soon_private_styling_lifestyle {
   padding: 19px;
-  padding-bottom: 248px;
+  padding-bottom: 210px;
   }
 
 p.coming_soon_private_styling_events {
   padding: 19px;
-  padding-bottom: 348px;
+  padding-bottom: 305px;
   }
 
 
@@ -458,6 +458,36 @@ p.coming_soon_private_styling_events {
   width: 100%;
   background-color: #1b1b1b;
   padding: 7px 40px 8px;
+
+  .footerlinks {
+    @include pie-clearfix;
+
+    @extend .container;
+
+    a {
+      color: #f3f3f3;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    li {
+      float: left;
+      margin-right: 55px;
+      position: relative;
+    }
+  }
+}
+
+#mainfooter_private_styling {
+  @include pie-clearfix;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 7px 40px 8px 255px;
 
   .footerlinks {
     @include pie-clearfix;

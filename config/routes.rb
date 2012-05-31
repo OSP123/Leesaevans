@@ -22,10 +22,10 @@ Site::Application.routes.draw do
   match 'contact/private_styling_contact_info' => "pages#private_styling_contact_info", :as => :private_styling_contact_info
   match 'contact/movies_contact_info' => "pages#movies_contact_info", :as => :movies_contact_info
 
-  match 'private_styling' => "pages#private_styling", :as => :private_styling 
-  match 'private_styling/lifestyle' => "pages#lifestyle", :as => :lifestyle 
-  match 'private_styling/closets' => "pages#closets", :as => :closets 
-  match 'private_styling/events' => "pages#events", :as => :events 
+  match 'private_styling' => "pages#private_styling", :as => :private_styling
+  match 'private_styling/lifestyle' => "pages#lifestyle", :as => :lifestyle, :layout => 'private_styling_layout.html.haml'
+  match 'private_styling/closets' => "pages#closets", :as => :closets, :layout => 'private_styling_layout.html.haml'
+  match 'private_styling/events' => "pages#events", :as => :events, :layout => 'private_styling_layout.html.haml'
 
   match 'celebrity_styling/editorials' => "pages#editorials", :as => :editorials
   match 'celebrity_styling/advertising' => "pages#advertising", :as => :advertising
