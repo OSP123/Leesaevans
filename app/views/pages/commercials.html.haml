@@ -2,6 +2,9 @@
 %section#commercials.categorysection
   .row
     %article.categoryitem
+			= link_to '<iframe width="560" height="315" src= "http://www.youtube.com/v/66RgU4QUJ7M?" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
+        = image_tag 'Commercials/samsung-pic.jpg', :class => 'img'
+        %p Samsung
       = link_to '<div><iframe width="560" height="315" src="http://www.youtube.com/v/-SJshO4Ys4M?" frameborder="0" allowfullscreen></iframe></div>', :class => 'fancybox', :rel => "group" do
         = image_tag 'Commercials/Russell-Brand-hp-touchpad.png', :class => 'img'
         %p HP Russell Brand
@@ -23,6 +26,4 @@
         = image_tag 'Commercials/Budweiser.jpg', :class => 'img'
         %p Budweiser
     %article.categoryitem
-      = link_to '<iframe width="560" height="315" src= "http://www.youtube.com/v/66RgU4QUJ7M?" frameborder="0" allowfullscreen></iframe>', :class => 'fancybox', :rel => "group" do
-        = image_tag 'Commercials/samsung-pic.jpg', :class => 'img'
-        %p Samsung
+
